@@ -19,25 +19,15 @@ const Rent = () => {
 
   return (
     <div className="Rent">
-      <Navbar>
-        <Routes>
-          <Route path="/" element={<Rent />} />
-          <Route path="/rentalrate" element={<RentalRate />} />
-          <Route path="/share" element={<Share />} />
-          <Route path="/learn" element={<Learn />} />
-        </Routes>
-      </Navbar>
-
-      <div className="shop">
+  <div className="shop">
         <div className="shoptitle">
-          <h1>Shop</h1>
+          <h1>Browse Catalog</h1>
         </div>
         <div className="vehicles">
           {VEHICLES.map((vehicle) => (
             <Vehicle key={vehicle.id} data={vehicle} />
           ))}
         </div>
-        <button onClick={handleRentClick}>Rent Vehicle</button>
       </div>
     </div>
   );
