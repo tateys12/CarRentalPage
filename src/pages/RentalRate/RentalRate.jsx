@@ -10,16 +10,6 @@ import Learn from "../Learn/Learn";
 const RentalRate = () =>{
     return (
     <div className="rental-rate">
-    <Router>
-      <Navbar>
-        <Routes>
-          <Route path="/rent" element={<Rent/>}/>
-          <Route path="/rentalrate" element={<RentalRate/>}/>
-          <Route path="/share" element={<Share/>}/>
-          <Route path="/learn" element={<Learn/>}/>
-        </Routes>
-      </Navbar>
-    </Router>
         <div className="page-title">
         <h1>Rental Rate</h1>
         </div>

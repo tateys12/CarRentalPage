@@ -1,0 +1,47 @@
+/* Vehicle.css */
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Add transition property for smooth scaling */
+  }
+  
+  .product:hover img {
+    transform: scale(1.1); /* Increase the size when hovering */
+  }
+  
+  .description {
+    padding: 15px;
+  }
+  
+  .description p {
+    margin: 0;
+  }
+  
+  .addToCartBttn {
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: #e66a00;
+  }
+  

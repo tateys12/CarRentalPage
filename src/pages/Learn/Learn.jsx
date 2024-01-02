@@ -10,16 +10,6 @@ import Share from "../Share/Share";
 const Learn = () =>{
     return (
     <div className="learn">
-    <Router>
-      <Navbar>
-        <Routes>
-          <Route path="/rent" element={<Rent/>}/>
-          <Route path="/rentalrate" element={<RentalRate/>}/>
-          <Route path="/share" element={<Share/>}/>
-          <Route path="/learn" element={<Learn/>}/>
-        </Routes>
-      </Navbar>
-    </Router>
         <div className="page-title">
         <h1>Learn more about us!</h1>
         </div>
