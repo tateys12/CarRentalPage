@@ -1,9 +1,11 @@
 import React from "react";
-import Navbar from "./src/components";
+import Navbar from "../../components/Navbar";
 import { Router } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
-import { Home } from "/components/Home"
+import Rent from "../Rent/Rent";
+import RentalRate from "../RentalRate/RentalRate";
+import Share from "../Share/Share";
 
 const Learn = () =>{
     return (
@@ -11,7 +13,6 @@ const Learn = () =>{
     <Router>
       <Navbar>
         <Routes>
-          <Route path="/home" element={<Home/>}/>
           <Route path="/rent" element={<Rent/>}/>
           <Route path="/rentalrate" element={<RentalRate/>}/>
           <Route path="/share" element={<Share/>}/>
