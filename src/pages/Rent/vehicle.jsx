@@ -36,7 +36,7 @@ const Vehicle = (props) => {
         <p>${rentalRate}</p>
       </div>
       <button className="rent-vehicle-bttn" onClick={handleRentClick}>
-        Rent Vehicle
+        Check Rates
       </button>
     </div>
   );

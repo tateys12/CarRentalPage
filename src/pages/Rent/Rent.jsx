@@ -2,11 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import { VEHICLES } from "../../vehicles";
 import "./Rent.css";
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
-import RentalRate from "../RentalRate/RentalRate";
-import Share from "../Share/Share";
-import Learn from "../Learn/Learn";
-import Vehicle from "./vehicle"; // Assuming Vehicle is a component
+import { useNavigate } from "react-router-dom";
 
 const Rent = () => {
   const navigate = useNavigate();
@@ -19,13 +15,18 @@ const Rent = () => {
 
   return (
     <div className="Rent">
-  <div className="shop">
+      <div className="shop">
         <div className="shoptitle">
-          <h1>Browse Catalog</h1>
+          <h1>Browse our Catalog</h1>
         </div>
         <div className="vehicles">
           {VEHICLES.map((vehicle) => (
-            <Vehicle key={vehicle.id} data={vehicle} />
+            <div key={vehicle.id} className="vehicle-item">
+              <img src={vehicle.vehicleImage} alt={vehicle.vehicleName} />
+              <h2>{vehicle.vehicleName}</h2>
+              {/* You can add more details about each vehicle here */}
+              <button onClick={handleRentClick}>Check Rates</button>
+            </div>
           ))}
         </div>
       </div>
