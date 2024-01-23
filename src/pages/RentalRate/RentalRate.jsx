@@ -32,7 +32,6 @@ const RentalRate = () => {
                 <img src={vehicle.vehicleImage} alt={vehicle.vehicleName} />
                 <h2>{vehicle.vehicleName}</h2>
                 <p>Rental Rate: ${vehicle.rentalRate.toFixed(2)}/day</p>
-                {/* You can add more details about each vehicle here */}
                 <button onClick={() => handleRentClick(vehicle)}>Rent Now</button>
               </div>
             ))}
